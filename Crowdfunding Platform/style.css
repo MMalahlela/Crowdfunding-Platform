@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #007b5e;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header span {
+  color: yellow;
+}
+
+main {
+  padding: 2rem;
+}
+
+.create-project,
+.project-list {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  background: #007b5e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005f48;
+}
+
+.project {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+.progress-bar {
+  background: #eee;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+
+.progress-bar-fill {
+  background: #28a745;
+  height: 100%;
+  width: 0%;
+  transition: 0.4s;
+  text-align: center;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #007b5e;
+  color: white;
+}
+
+.project-list #projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #007b5e;
+}
+
+.project p {
+  margin: 0.5rem 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.progress-bar {
+  height: 18px;
+  background-color: #e0e0e0;
+  border-radius: 9px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #28a745, #a8e063);
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  line-height: 18px;
+  border-radius: 9px;
+}
+
+.project input[type="number"],
+.project textarea {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.project button {
+  background-color: #007b5e;
+  color: white;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.project button:hover {
+  background-color: #005f48;
+}
+
+.project ul {
+  padding-left: 1rem;
+  list-style-type: disc;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .project-list #projects {
+    grid-template-columns: 1fr;
+  }
+}

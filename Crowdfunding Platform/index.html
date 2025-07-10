@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CrowdfundZA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Crowdfund<span>ZA</span></h1>
+  </header>
+
+  <main>
+    <section class="create-project">
+      <h2>Create a Project</h2>
+      <input type="text" id="title" placeholder="Project Title">
+      <textarea id="description" placeholder="Project Description"></textarea>
+      <input type="number" id="goal" placeholder="Funding Goal (R)">
+      <button onclick="createProject()">Submit Project</button>
+    </section>
+
+    <section class="project-list">
+      <h2>Active Projects</h2>
+      <div id="projects"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CrowdfundZA | Built with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
